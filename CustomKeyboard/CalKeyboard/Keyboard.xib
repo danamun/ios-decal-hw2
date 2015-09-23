@@ -1,12 +1,23 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8187.4" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8151.3"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KeyboardViewController" customModule="CalKeyboard" customModuleProvider="target">
             <connections>
+                <outlet property="deleteKeyboardButton" destination="6u9-Rb-L3L" id="ylk-ci-lTX"/>
                 <outlet property="nextKeyboardButton" destination="gRt-12-JcF" id="CWQ-gG-G2m"/>
+                <outlet property="quote1KeyboardButton" destination="xwY-iY-SDB" id="aHp-EP-lsd"/>
+                <outlet property="quote2KeyboardButton" destination="0IN-uu-pOk" id="pLm-Rh-kjA"/>
+                <outlet property="quote3KeyboardButton" destination="XN0-BD-2V3" id="HnX-So-bFR"/>
+                <outlet property="quote4KeyboardButton" destination="4NW-yL-SDS" id="n06-i0-7uQ"/>
+                <outlet property="quote5KeyboardButton" destination="CGZ-8Z-Qxg" id="NDP-pr-YU6"/>
+                <outlet property="quote6KeyboardButton" destination="PPZ-eK-gST" id="Csw-uy-xYf"/>
+                <outlet property="quote7KeyboardButton" destination="5ue-tM-c1T" id="krD-hW-t7M"/>
+                <outlet property="quote8KeyboardButton" destination="ZCU-Kx-gUt" id="wdm-TG-htL"/>
+                <outlet property="returnKeyboardButton" destination="jVQ-MS-WaC" id="wTr-ou-vNF"/>
+                <outlet property="spaceKeyboardButton" destination="Pfz-JI-aUU" id="4in-WU-U8q"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -15,17 +26,177 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gRt-12-JcF">
-                    <rect key="frame" x="8" y="162" width="30" height="30"/>
+                    <rect key="frame" x="20" y="157" width="30" height="30"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="30" id="eu0-xj-Jov"/>
                         <constraint firstAttribute="height" constant="30" id="rFT-bm-aBM"/>
                     </constraints>
-                    <state key="normal" title="N"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <state key="normal" title="N">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jVQ-MS-WaC">
+                    <rect key="frame" x="244" y="157" width="70" height="30"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="HtB-WM-NET"/>
+                        <constraint firstAttribute="height" constant="30" id="ZuE-Cb-aX8"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <state key="normal" title="return">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xwY-iY-SDB">
+                    <rect key="frame" x="34" y="10" width="114" height="30"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="160" id="lBB-BF-q7U"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                    <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <state key="normal" title="May the Force...">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0IN-uu-pOk">
+                    <rect key="frame" x="34" y="48" width="157" height="30"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="160" id="4EL-wT-5Kg"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                    <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <state key="normal" title="Judge me by my size...">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XN0-BD-2V3">
+                    <rect key="frame" x="34" y="86" width="145" height="30"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="160" id="cCU-CX-I1g"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                    <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <state key="normal" title="The Force is strong...">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4NW-yL-SDS">
+                    <rect key="frame" x="34" y="123" width="111" height="30"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="160" id="b5j-1A-VFp"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                    <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <state key="normal" title="I won't fail you...">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CGZ-8Z-Qxg">
+                    <rect key="frame" x="210" y="10" width="120" height="30"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="160" id="Y5g-th-3Y0"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                    <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <state key="normal" title="I am your father...">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PPZ-eK-gST">
+                    <rect key="frame" x="210" y="48" width="116" height="30"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="160" id="xtD-CA-5eL"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                    <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <state key="normal" title="When I left you...">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ue-tM-c1T">
+                    <rect key="frame" x="210" y="86" width="120" height="30"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="160" id="9ck-rw-iOo"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                    <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <state key="normal" title="A long time ago...">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZCU-Kx-gUt">
+                    <rect key="frame" x="210" y="123" width="105" height="30"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="160" id="DNe-DB-9xi"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                    <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <state key="normal" title="Use the force...">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pfz-JI-aUU">
+                    <rect key="frame" x="58" y="157" width="178" height="30"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="n0i-Kb-SS3"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <state key="normal" title="space">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6u9-Rb-L3L">
+                    <rect key="frame" x="322" y="157" width="28" height="30"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="TVM-xp-urD"/>
+                        <constraint firstAttribute="width" constant="30" id="dF9-Hz-hqx"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <state key="normal" title="&lt;x">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
                 </button>
             </subviews>
             <constraints>
-                <constraint firstItem="gRt-12-JcF" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="LUD-YX-JVD"/>
-                <constraint firstAttribute="bottom" secondItem="gRt-12-JcF" secondAttribute="bottom" constant="8" id="tEE-h3-FZa"/>
+                <constraint firstItem="Pfz-JI-aUU" firstAttribute="leading" secondItem="gRt-12-JcF" secondAttribute="trailing" constant="10" id="7gC-pi-3Ga"/>
+                <constraint firstAttribute="trailing" secondItem="6u9-Rb-L3L" secondAttribute="trailing" constant="20" id="CBN-FM-2ru"/>
+                <constraint firstItem="CGZ-8Z-Qxg" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="xwY-iY-SDB" secondAttribute="trailing" constant="13" id="Ea0-AV-Dab"/>
+                <constraint firstItem="6u9-Rb-L3L" firstAttribute="leading" secondItem="jVQ-MS-WaC" secondAttribute="trailing" constant="10" id="FUn-1y-XgQ"/>
+                <constraint firstItem="CGZ-8Z-Qxg" firstAttribute="leading" secondItem="PPZ-eK-gST" secondAttribute="leading" id="J3w-BD-I0U"/>
+                <constraint firstItem="gRt-12-JcF" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="LUD-YX-JVD"/>
+                <constraint firstItem="PPZ-eK-gST" firstAttribute="leading" secondItem="5ue-tM-c1T" secondAttribute="leading" id="LuT-HT-8DE"/>
+                <constraint firstItem="0IN-uu-pOk" firstAttribute="leading" secondItem="XN0-BD-2V3" secondAttribute="leading" id="Mbf-A0-Kex"/>
+                <constraint firstItem="xwY-iY-SDB" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="OZq-J2-lyw"/>
+                <constraint firstItem="XN0-BD-2V3" firstAttribute="baseline" secondItem="5ue-tM-c1T" secondAttribute="baseline" id="Od5-uh-a3R"/>
+                <constraint firstAttribute="bottom" secondItem="jVQ-MS-WaC" secondAttribute="bottom" constant="13" id="QCi-IC-ajR"/>
+                <constraint firstItem="XN0-BD-2V3" firstAttribute="top" secondItem="0IN-uu-pOk" secondAttribute="bottom" constant="5" id="Rpc-Rl-hJW"/>
+                <constraint firstAttribute="bottom" secondItem="6u9-Rb-L3L" secondAttribute="bottom" constant="13" id="UDJ-UQ-L7z"/>
+                <constraint firstItem="0IN-uu-pOk" firstAttribute="top" secondItem="xwY-iY-SDB" secondAttribute="bottom" constant="5" id="a8e-HG-IsB"/>
+                <constraint firstItem="4NW-yL-SDS" firstAttribute="baseline" secondItem="ZCU-Kx-gUt" secondAttribute="baseline" id="c18-Nf-ShA"/>
+                <constraint firstItem="5ue-tM-c1T" firstAttribute="leading" secondItem="ZCU-Kx-gUt" secondAttribute="leading" id="ca4-rr-MyZ"/>
+                <constraint firstItem="CGZ-8Z-Qxg" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="d05-aE-Pov"/>
+                <constraint firstItem="xwY-iY-SDB" firstAttribute="baseline" secondItem="CGZ-8Z-Qxg" secondAttribute="baseline" id="daR-LG-DtI"/>
+                <constraint firstItem="0IN-uu-pOk" firstAttribute="baseline" secondItem="PPZ-eK-gST" secondAttribute="baseline" id="eCq-oo-oUs"/>
+                <constraint firstItem="jVQ-MS-WaC" firstAttribute="leading" secondItem="Pfz-JI-aUU" secondAttribute="trailing" constant="10" id="fEN-D5-B9l"/>
+                <constraint firstItem="xwY-iY-SDB" firstAttribute="leading" secondItem="0IN-uu-pOk" secondAttribute="leading" id="nRh-AX-4qK"/>
+                <constraint firstAttribute="bottom" secondItem="Pfz-JI-aUU" secondAttribute="bottom" constant="13" id="nrO-v0-uy6"/>
+                <constraint firstItem="xwY-iY-SDB" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="pCH-AF-cav"/>
+                <constraint firstItem="XN0-BD-2V3" firstAttribute="leading" secondItem="4NW-yL-SDS" secondAttribute="leading" id="qHI-gO-evw"/>
+                <constraint firstAttribute="bottom" secondItem="gRt-12-JcF" secondAttribute="bottom" constant="13" id="tEE-h3-FZa"/>
+                <constraint firstItem="4NW-yL-SDS" firstAttribute="top" secondItem="XN0-BD-2V3" secondAttribute="bottom" constant="5" id="xRr-8z-4tL"/>
+                <constraint firstAttribute="trailing" secondItem="CGZ-8Z-Qxg" secondAttribute="trailing" constant="20" id="xqo-Eq-VAs"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
